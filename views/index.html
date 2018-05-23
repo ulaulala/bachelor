@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>MyMusic | Home</title>
+    <meta name="description" content="MyMusic - Home">
+    <meta name="author" content="Urszula Kaźmierczyk">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/stylesheets/reset.css">
+    <link rel="stylesheet" type="text/css" href="/static/stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/javascripts/jquery-bar-rating/dist/themes/css-stars.css">
+</head>
+<body>
+<header class="header row vertical-center space-between border-bottom">
+    <div class="logo row vertical-center">
+        <img src="/static/images/MyMusic_logo.png" alt=""/>
+        <span class="large-font bold-font">MyMusic</span>
+    </div>
+    <nav class="menu">
+        <ul class="row little-font regular-font">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/sign-in">Sign in</a></li>
+            <li id="logout"><a>Log out</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <div class="catchline column">
+        <p class="ultralarge-font semibold-font text-center">Music only for you!</p>
+        <p id="welcome-text" class="large-font regular-font"></p>
+    </div>
+
+    <section class="whats-new list-container">
+        <h3 class="medium-font light-font">What's new?</h3>
+        <ul class="list regular-font little-font">
+
+        </ul>
+    </section>
+
+    <section class="top-songs list-container">
+        <h3 class="medium-font light-font">The most popular songs</h3>
+        <ul class="list regular-font little-font">
+
+        </ul>
+    </section>
+
+    <section class="recommendations similarity-recommendations list-container">
+        <h3 class="medium-font light-font">Today's recommendations by similarity</h3>
+        <ul class="list regular-font little-font">
+
+        </ul>
+    </section>
+
+    <section class="recommendations svd-recommendations list-container">
+        <h3 class="medium-font light-font">Today's recommendations by SVD</h3>
+        <ul class="list regular-font little-font">
+
+        </ul>
+    </section>
+
+    <section class="recommendations reduced-svd-recommendations list-container">
+        <h3 class="medium-font light-font">Today's recommendations by SVD with dimensionality reduction</h3>
+        <ul class="list regular-font little-font">
+
+        </ul>
+    </section>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="/static/javascripts/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+<script type="text/javascript" src="/static/javascripts/ApiService.js"></script>
+<script type="text/javascript" src="/static/javascripts/resultsTemplates.js"></script>
+<script type="text/javascript" src="/static/javascripts/ratings.js"></script>
+<script type="text/javascript" src="/static/javascripts/homeService.js"></script>
+
+</body>
+</html>

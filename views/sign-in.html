@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>MyMusic | Sign in</title>
+    <meta name="description" content="MyMusic - Sign in">
+    <meta name="author" content="Urszula Kaźmierczyk">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/stylesheets/reset.css">
+    <link rel="stylesheet" type="text/css" href="/static/stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/javascripts/jquery-bar-rating/dist/themes/css-stars.css">
+</head>
+<body>
+<header class="header row vertical-center space-between border-bottom">
+    <div class="logo row vertical-center">
+        <img src="/static/images/MyMusic_logo.png" alt=""/>
+        <span class="large-font bold-font">MyMusic</span>
+    </div>
+    <nav class="menu">
+        <ul class="row little-font regular-font">
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href="/sign-in">Sign in</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <div class="catchline column">
+        <p class="ultralarge-font semibold-font text-center">Music only for you!</p>
+        <p id="welcome-text" class="large-font regular-font"></p>
+    </div>
+
+    <section class="sign-in">
+        <form class="regular-font little-font">
+            <h3 class="medium-font light-font">Sign in</h3>
+            <label for="username">
+                <span>User name: </span>
+                <input class="regular-font medium-font" type="text" id="username">
+                <span class="error-message"></span>
+            </label>
+            <label for="password">
+                <span>Password: </span>
+                <input class="regular-font medium-font" type="password" id="password">
+                <span class="error-message"></span>
+            </label>
+
+            <button class="little-font light-font" type="submit">Sign in</button>
+        </form>
+    </section>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="/static/javascripts/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+<script type="text/javascript" src="/static/javascripts/ApiService.js"></script>
+<script type="text/javascript" src="/static/javascripts/resultsTemplates.js"></script>
+<script type="text/javascript" src="/static/javascripts/ratings.js"></script>
+<script type="text/javascript" src="/static/javascripts/loginService.js"></script>
+
+</body>
+</html>
